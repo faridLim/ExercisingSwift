@@ -15,5 +15,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func ClickMoveBtn(_ sender: Any) {
+        //find controller(Detail Controller)
+        //Detail Controller ID를 찾아 상수에 저장(옵셔널 바인딩)
+        
+        if let controller = self.storyboard?.instantiateViewController(identifier: "DetailController"){
+            //psuh controller = navi
+            self.navigationController?.pushViewController(controller , animated: true)}
+        
+        
+    }
 }
 
